@@ -10,6 +10,7 @@ from datetime import datetime, date
 # 1. Initialisierung
 app = dash.Dash(__name__,
                 meta_tags=[{'name': 'viewport', 'content': 'width=device-width, initial-scale=1.0'}])
+server = app.server
 
 def load_data():
     url_d = 'https://www.dropbox.com/scl/fi/8la5t610wxgklnz1c9n40/wf-dash.xlsx?rlkey=eeu3n3l2jtnp04lyjfeoc3blj&st=jqq7lngu&dl=1'
